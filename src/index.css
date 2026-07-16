@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+/* ========================================
+   Robot Market Panel - Custom Theme
+   Tailwind v4 CSS-based configuration
+======================================== */
+
+@theme {
+    /* Primary Colors */
+    --color-primary: #00A693;
+    --color-primary-hover: #009b89;
+
+    /* Background */
+    --color-bg: #f2fffd;
+
+    /* Status Colors */
+    --color-success: #00ab97;
+    --color-error: #005148;
+    --color-info: #00bba6;
+
+    /* Typography */
+    --font-sans: 'Vazirmatn', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Base styles */
+body {
+    @apply bg-bg text-primary;
+    font-family: var(--font-sans);
+}
